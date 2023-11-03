@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TileResourceBase" load_steps=3 format=3 uid="uid://dtf5wrgi3eki8"]
+
+[ext_resource type="Script" path="res://tiles/tile_resource_base.gd" id="1_6n5wc"]
+[ext_resource type="Texture2D" uid="uid://btf6mtpv3kbye" path="res://tiles/cell-hex.png" id="2_0y6ok"]
+
+[resource]
+script = ExtResource("1_6n5wc")
+tile_texture = ExtResource("2_0y6ok")

@@ -1,0 +1,110 @@
+[gd_scene load_steps=5 format=3 uid="uid://jn3m3enrann2"]
+
+[ext_resource type="PackedScene" uid="uid://orlmmjxt1l6i" path="res://tiles/tile_selector.tscn" id="1_5l274"]
+[ext_resource type="Script" path="res://main/game.gd" id="1_11pq6"]
+[ext_resource type="Script" path="res://tiles/tile_map_region.gd" id="1_xjiyg"]
+[ext_resource type="Resource" uid="uid://dtf5wrgi3eki8" path="res://tiles/tile_resource.tres" id="2_yjqmx"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_11pq6")
+
+[node name="TileMapRegion" type="Node2D" parent="."]
+script = ExtResource("1_xjiyg")
+tile_config = ExtResource("2_yjqmx")
+
+[node name="Tile" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(146, 138)
+
+[node name="Tile2" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(179, 138)
+
+[node name="Tile3" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(212, 138)
+
+[node name="Tile4" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(245, 138)
+
+[node name="Tile5" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(278, 138)
+
+[node name="Tile6" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(162, 158)
+
+[node name="Tile7" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(195, 158)
+
+[node name="Tile8" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(228, 158)
+
+[node name="Tile9" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(261, 158)
+
+[node name="Tile10" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(294, 158)
+
+[node name="Tile11" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(146, 177)
+
+[node name="Tile12" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(179, 177)
+
+[node name="Tile13" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(212, 177)
+
+[node name="Tile14" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(245, 177)
+
+[node name="Tile15" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(278, 177)
+
+[node name="Tile16" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(162, 197)
+
+[node name="Tile17" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(195, 197)
+
+[node name="Tile18" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(228, 197)
+
+[node name="Tile19" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(261, 197)
+
+[node name="Tile20" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(294, 197)
+
+[node name="Tile21" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(146, 217)
+
+[node name="Tile22" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(179, 217)
+
+[node name="Tile23" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(212, 217)
+
+[node name="Tile24" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(245, 217)
+
+[node name="Tile25" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(278, 217)
+
+[node name="Tile26" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(162, 237)
+
+[node name="Tile27" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(195, 237)
+
+[node name="Tile28" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(228, 237)
+
+[node name="Tile29" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(261, 237)
+
+[node name="Tile30" parent="TileMapRegion" instance=ExtResource("1_5l274")]
+position = Vector2(294, 237)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 18.0
+offset_top = 276.0
+offset_right = 58.0
+offset_bottom = 299.0
+text = "test"

@@ -13,6 +13,7 @@ func _ready():
 		hex_area.visible = true
 	update_select(GC.SELECTS.FACE)
 	S.tile_change_part_focus.connect(update_select)
+#	$Area.mouse_shape_entered.connect(_on_area_shape_entered, [shape_idx?])
 
 func update_select(new_part:GC.SELECTS):
 	_current_select = new_part
@@ -40,7 +41,12 @@ func update_select(new_part:GC.SELECTS):
 			$Area/HexVertexN.set_deferred("disabled", false)
 			$Area/HexVertexNW.set_deferred("disabled", false)
 
-func _on_mouse_entered():
+func _on_area_shape_entered(shape_idx):
+	S.tile_over.emit("mouse entered " + _print_select_part() + " @ " + _print_select_name())
+	sprite.modulate = Color.YELLOW
+	print_debug(shape_idx)
+
+func _on_mouse_entered():  # deprecated
 #	print_debug("mouse entered " + name)
 	S.tile_over.emit("mouse entered " + _print_select_part() + " @ " + _print_select_name())
 	sprite.modulate = Color.YELLOW
@@ -60,7 +66,7 @@ func _print_select_name() -> String:
 		GC.SELECTS.FACE:
 			return name
 		GC.SELECTS.EDGE:
-			return name + "& some next hex"
+			return name + " & some next hex"
 		GC.SELECTS.VERTEX:
-			return name + "& some next hexes"
+			return name + " & some next hexes"
 	return "err 231102:56"

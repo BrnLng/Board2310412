@@ -18,15 +18,14 @@ texture = ExtResource("1_aqh8d")
 [node name="Area" type="Area2D" parent="."]
 
 [node name="HexFace" type="CollisionPolygon2D" parent="Area"]
+visible = false
 polygon = PackedVector2Array(0, -13, 16, -5, 16, 6, 0, 14, -17, 6, -17, -5)
 
 [node name="HexVertexN" type="CollisionShape2D" parent="Area"]
-visible = false
 position = Vector2(0, -13)
 shape = SubResource("CircleShape2D_loh05")
 
 [node name="HexVertexNW" type="CollisionShape2D" parent="Area"]
-visible = false
 position = Vector2(-17, -6)
 shape = SubResource("CircleShape2D_loh05")
 
@@ -48,4 +47,4 @@ position = Vector2(-17, 0)
 rotation = -1.5708
 shape = SubResource("RectangleShape2D_s6004")
 
-[connection signal="mouse_entered" from="Area" to="." method="_on_mouse_entered"]
+[connection signal="mouse_shape_entered" from="Area" to="." method="_on_area_shape_entered"]

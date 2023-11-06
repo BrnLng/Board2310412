@@ -102,7 +102,7 @@ position = Vector2(261, 237)
 [node name="Tile30" parent="TileMapRegion" instance=ExtResource("1_5l274")]
 position = Vector2(294, 237)
 
-[node name="Label" type="Label" parent="."]
+[node name="DebugLabel" type="Label" parent="."]
 offset_left = 18.0
 offset_top = 276.0
 offset_right = 58.0

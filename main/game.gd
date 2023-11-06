@@ -1,10 +1,10 @@
 extends Node2D
 
-@onready var label = $Label
+@onready var debug_label = $DebugLabel
 var current_tile_part_toggle := 0
 
 func _ready():
-	S.connect("tile_over", update_label)
+	S.connect("tile_over", update_debug_label)
 
 func _process(delta):
 	if Input.is_action_just_released("ui_right"):
@@ -12,5 +12,5 @@ func _process(delta):
 		print_debug(current_tile_part_toggle)
 		S.tile_change_part_focus.emit(current_tile_part_toggle)
 
-func update_label(msg:String):
-	label.text = msg
+func update_debug_label(msg:String):
+	debug_label.text = msg

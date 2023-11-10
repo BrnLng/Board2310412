@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://jn3m3enrann2"]
+[gd_scene load_steps=6 format=3 uid="uid://jn3m3enrann2"]
 
 [ext_resource type="PackedScene" uid="uid://orlmmjxt1l6i" path="res://tiles/tile_selector.tscn" id="1_5l274"]
 [ext_resource type="Script" path="res://main/game.gd" id="1_11pq6"]
 [ext_resource type="Script" path="res://tiles/tile_map_region.gd" id="1_xjiyg"]
 [ext_resource type="Resource" uid="uid://dtf5wrgi3eki8" path="res://tiles/tile_resource.tres" id="2_yjqmx"]
+[ext_resource type="Script" path="res://main/DebugLabel.gd" id="5_ebxdw"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_11pq6")
@@ -103,8 +104,12 @@ position = Vector2(261, 237)
 position = Vector2(294, 237)
 
 [node name="DebugLabel" type="Label" parent="."]
-offset_left = 18.0
-offset_top = 276.0
-offset_right = 58.0
-offset_bottom = 299.0
-text = "test"
+offset_left = 15.0
+offset_top = 262.0
+offset_right = 385.0
+offset_bottom = 312.0
+text = "test
+sec"
+autowrap_mode = 3
+text_overrun_behavior = 4
+script = ExtResource("5_ebxdw")

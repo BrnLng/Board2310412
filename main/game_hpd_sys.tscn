@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dat5ylci62uv1"]
+
+[ext_resource type="Script" path="res://main/game_hpd_sys.gd" id="1_pwdw0"]
+
+[node name="GameHPD_Sys" type="Node2D"]
+script = ExtResource("1_pwdw0")

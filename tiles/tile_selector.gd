@@ -44,7 +44,9 @@ func update_select(new_part:GC.SELECTS):
 func _on_area_shape_entered(shape_idx):
 	S.tile_over.emit("mouse entered " + _print_select_part() + " @ " + _print_select_name())
 	sprite.modulate = Color.YELLOW
-	print_debug(shape_idx)
+	var shape_name = $Area.get_child(shape_idx).name
+#	print_debug(shape_name)
+	S.update_debug_label.emit(shape_name)
 
 func _on_mouse_entered():  # deprecated
 #	print_debug("mouse entered " + name)
